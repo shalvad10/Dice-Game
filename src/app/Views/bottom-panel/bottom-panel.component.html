@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="bet-actions">
+        <app-icon-button *ngFor="let action of betActions" (onAction)="bubbleAction($event)" [value]="action.value"
+            [type]="action.type" [action]="action.action"></app-icon-button>
+    </div>
+    <div class="chips-cont">
+        <app-chips-container [chips]="chips" [selectedChip]="selectedChip" (onAction)="bubbleAction($event)">
+        </app-chips-container>
+    </div>
+    <div class="roll-button">
+        <div class="btn" (click)="rollDice()">
+            <span> ROLL </span>
+        </div>
+    </div>
+    <div class="game-actions">
+        <app-icon-button *ngFor="let action of gameActions" (onAction)="bubbleAction($event)" [value]="action.value"
+            [type]="action.type" [icon]="action.icon" [action]="action.action"></app-icon-button>
+    </div>
+</div>

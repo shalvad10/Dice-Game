@@ -1,0 +1,85 @@
+.cont {
+    .title {
+        width: 100%;
+        height: 70px;
+        border: 1px solid white;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        font-size: 35px;
+        font-family: 'Gilroy-Heavy';
+    }
+
+    .dices_cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        .diceCont {
+            margin-top: 5px;
+            width: 50%;
+            height: 250px;
+            border: 1px solid white;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2px;
+
+            .dice {
+                width: 100%;
+                height: 35px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                &.red_1 { background-image: url('../../../assets/images/dices/red_1.svg');}
+                &.red_2 { background-image: url('../../../assets/images/dices/red_2.svg');}
+                &.red_3 { background-image: url('../../../assets/images/dices/red_3.svg');}
+                &.red_4 { background-image: url('../../../assets/images/dices/red_4.svg');}
+                &.red_5 { background-image: url('../../../assets/images/dices/red_5.svg');}
+                &.red_6 { background-image: url('../../../assets/images/dices/red_6.svg');}
+                
+                &.white_1 { background-image: url('../../../assets/images/dices/white_1.svg');}
+                &.white_2 { background-image: url('../../../assets/images/dices/white_2.svg');}
+                &.white_3 { background-image: url('../../../assets/images/dices/white_3.svg');}
+                &.white_4 { background-image: url('../../../assets/images/dices/white_4.svg');}
+                &.white_5 { background-image: url('../../../assets/images/dices/white_5.svg');}
+                &.white_6 { background-image: url('../../../assets/images/dices/white_6.svg');}
+            }
+        }
+    }
+
+    .multiplier {
+        margin-top: 5px;
+        width: 100%;
+        height: 35px;
+        border: 1px solid white;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        font-size: 22px;
+        font-family: 'Gilroy-Heavy';
+        &.epic {
+            color: #AE0000;
+            -webkit-text-stroke: 1px #FFF;
+        }
+    }
+
+    .chip_place {
+        margin-top: 5px;
+        width: 100%;
+        height: 70px;
+        border: 1px solid white;
+        border-radius: 7px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

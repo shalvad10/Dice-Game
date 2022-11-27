@@ -1,0 +1,14 @@
+.cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    .topPanel {
+        z-index: 2;
+    }
+    .board {
+        z-index: 1;
+    }
+}

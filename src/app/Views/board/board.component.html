@@ -1,0 +1,15 @@
+<div class="cont">
+    <div class="title"> {{ cellData.number }} </div>
+    <div class="dices_cont">
+        <div class="diceCont">
+            <div class="dice" *ngFor="let dice of cellData.dices" [ngClass]="'red_'+dice[0]"></div>
+        </div>
+        <div class="diceCont">
+            <div class="dice" *ngFor="let dice of cellData.dices" [ngClass]="'white_'+dice[1]"></div>
+        </div>
+    </div>
+    <div class="multiplier" [ngClass]="[cellData.isEpic ? 'epic' : '']"> X{{ cellData.multiplier }} </div>
+    <div class="chip_place" (click)="onClick()">
+        <app-chip *ngIf="cellData.betAmmount > 0" [value]="cellData.betAmmount"></app-chip>
+    </div>
+</div>

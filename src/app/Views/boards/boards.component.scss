@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    width: 80vw;
+    max-width: 1200px;
+    .board {
+        flex: 1;
+    }
+    .history {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 30px;
+        
+        .title {
+            width: 100%;
+            height: 70px;
+            border: 1px solid white;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            font-size: 30px;
+            font-family: 'Gilroy-Heavy';
+        }
+        .dices {
+            margin-top: 5px;
+            width: 50%;
+            
+            border: 1px solid white;
+            border-radius: 7px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            gap: 3px;
+            .diceCont {
+                width: 100%;
+                height: 35px;
+                border-radius: 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2px 0px;
+                &:first-child {
+                    border: 1px solid white;
+                    border-bottom: 2px solid white;
+                }
+                .dice {
+                    flex: 1;
+                    height: 35px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    &.red_1 { background-image: url('../../../assets/images/dices/red_1.svg');}
+                    &.red_2 { background-image: url('../../../assets/images/dices/red_2.svg');}
+                    &.red_3 { background-image: url('../../../assets/images/dices/red_3.svg');}
+                    &.red_4 { background-image: url('../../../assets/images/dices/red_4.svg');}
+                    &.red_5 { background-image: url('../../../assets/images/dices/red_5.svg');}
+                    &.red_6 { background-image: url('../../../assets/images/dices/red_6.svg');}
+                    
+                    &.white_1 { background-image: url('../../../assets/images/dices/white_1.svg');}
+                    &.white_2 { background-image: url('../../../assets/images/dices/white_2.svg');}
+                    &.white_3 { background-image: url('../../../assets/images/dices/white_3.svg');}
+                    &.white_4 { background-image: url('../../../assets/images/dices/white_4.svg');}
+                    &.white_5 { background-image: url('../../../assets/images/dices/white_5.svg');}
+                    &.white_6 { background-image: url('../../../assets/images/dices/white_6.svg');}
+                }
+            }
+        }
+    }
+}

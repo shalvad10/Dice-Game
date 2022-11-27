@@ -1,0 +1,5 @@
+<div class="cont">
+    <app-chip *ngFor="let chip of chips" [value]="chip" [isSelected]="chip == selectedChip"
+        (onAction)="bubbleAction($event)">
+    </app-chip>
+</div>

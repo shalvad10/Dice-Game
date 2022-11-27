@@ -1,0 +1,32 @@
+<div class="cont">
+    <div class="left">
+        <div class="nominale">
+            <div class="selected">
+                <div class="item">
+                    <span class="nominaleText"> {{ selectedNominale }} </span>
+                    <span class="currencyText"> {{ currency }} </span>
+                </div>
+                <div class="arrow" (click)="toggleNominales()">
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div class="dropdown" [ngClass]="[showNominales ? 'open' : '']">
+                <div class="item" *ngFor="let nominale of nominales" (click)="selectNominale(nominale)">
+                    <span class="nominaleText"> {{ nominale }} </span>
+                    <span class="currencyText"> {{ currency }} </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="item balance">
+            <span>Balance: <span class="value">14221240</span> </span>
+        </div>
+        <div class="item bet">
+            <span>Bet: <span class="value">100</span> </span>
+        </div>
+        <div class="item win">
+            <span>Win: <span class="value">3600</span> </span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+.container {
+    width: 80vw;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .bet-actions {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 5px;
+    }
+    .chips-cont {
+        
+    }
+    .roll-button {
+        
+        .btn {
+            cursor: pointer;
+            width: 140px;
+            height: 60px;
+            border: 2px solid #FFF;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(50% 240% at 50% 51.36%, #386830 0%, #01AF00 100%);
+
+            span {
+                color: #FFF;
+                font-size: 27px;
+                letter-spacing: 2px;
+                font-family: 'Gilroy-Bold';
+            }
+        }
+    }
+
+    .game-actions {
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 5px;
+    }
+}
