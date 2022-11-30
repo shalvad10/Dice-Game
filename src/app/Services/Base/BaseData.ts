@@ -39,7 +39,7 @@ export class BaseData {
         selected: 0.15
       },
       history: [
-        [1,6],[2,5],[3,4],[4,3],[5,2],[1,3]
+        [1,6],[2,5],[3,4],[4,3],[5,2],[6,1]
       ],
       betActions: [
         { action: 'doubleBet', value: 'X2', type: 'text', icon: null},

@@ -13,7 +13,6 @@
             <div class="dropdown" [ngClass]="[showNominales ? 'open' : '']">
                 <div class="item" *ngFor="let nominale of nominales" (click)="selectNominale(nominale)">
                     <span class="nominaleText"> {{ nominale }} </span>
-                    <span class="currencyText"> {{ currency }} </span>
                 </div>
             </div>
         </div>
