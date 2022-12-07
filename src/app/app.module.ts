@@ -9,6 +9,8 @@ import { BottomPanelComponent } from './Views/bottom-panel/bottom-panel.componen
 import { IconButtonComponent } from './Views/icon-button/icon-button.component';
 import { ChipsContainerComponent } from './Views/chips-container/chips-container.component';
 import { ChipComponent } from './Views/chip/chip.component';
+import { HistoryPanelComponent } from './Views/history-panel/history-panel.component';
+import { DiceRollComponent } from './dice-roll/dice-roll.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ChipComponent } from './Views/chip/chip.component';
     BottomPanelComponent,
     IconButtonComponent,
     ChipsContainerComponent,
-    ChipComponent
+    ChipComponent,
+    HistoryPanelComponent,
+    DiceRollComponent
   ],
   imports: [
     BrowserModule

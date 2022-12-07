@@ -39,7 +39,7 @@ export class BaseData {
         selected: 0.15
       },
       history: [
-        [1,6],[2,5],[3,4],[4,3],[5,2],[6,1]
+        [1,6],[2,5],[3,4],[4,3],[5,2],[6,1],[2,5],[3,4],[4,3],[5,2]
       ],
       betActions: [
         { action: 'doubleBet', value: 'X2', type: 'text', icon: null},
@@ -50,7 +50,25 @@ export class BaseData {
         { action: 'showWin', value: 'Show Win' , type: 'text', icon: null},
         { action: 'megaPhone', value: null , type: 'icon', icon: 'megaphone'},
         { action: 'gameInfo', value: null , type: 'icon', icon: 'info'}
-      ]
+      ],
+      dices: [],
+      rolledDices: {diceRoll: 1, dice1: 1, dice2: 5 },
+      boardConfig: {
+        size:{x:300,y:200},
+        boardSize:{x:300,y:200},
+        animations: { move:.1, },
+        dice: {
+          size:100,
+          offset:{x:0,y:0},
+          images: {
+            dice1: {}, dice2: {}, dice3: {}, dice4: {}, dice5: {}, dice6: {}
+          }
+        },
+        HolderMax :0,
+        stackOnMaxSize:0,
+        holderClickRect:{x:0,y:0},
+        containers:[],
+      }
     }
   };
 }

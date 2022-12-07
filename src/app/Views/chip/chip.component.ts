@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ChangeDetectorRef } from '@angular/core';
 import { ComponentBase } from 'src/app/Base/ComponentBase';
+const isMobile = require('../../Services/Libs/isMobile.min.js');
 
 @Component({
   selector: 'app-chip',
@@ -28,5 +29,9 @@ export class ChipComponent extends ComponentBase implements OnInit {
 
   public get chipValue() {
     return this.value % 1 == 0 ? this.value : this.value.toFixed(2);
+  }
+  
+  public get mobile(): any {
+    return isMobile;
   }
 }

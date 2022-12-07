@@ -20,6 +20,12 @@ export default class Actions {
     this.data.game.boards.forEach((board: any) => {
       board.betAmmount = 0;
     });
+    this.data.game.rolledDices = {
+      diceRoll: 1,
+      dice1: Math.floor(Math.random() * (6 - 1) + 1),
+      dice2: Math.floor(Math.random() * (6 - 1) + 1)
+    }
+    console.warn(this.data.game.rolledDices);
   }
   public selectChip(data: any): void {
     this.data.game.chips.selected = data.data
@@ -31,7 +37,6 @@ export default class Actions {
 
   public placeBet(data: any): void {
     const board = this.data.game.boards.filter( (board: any) => board.id == data.boardId)[0];
-    console.warn(data,board);
     board.betAmmount += this.data.game.chips.selected;
    }
 

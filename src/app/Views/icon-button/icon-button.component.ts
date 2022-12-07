@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ChangeDetectorRef } from '@angular/core';
 import { ComponentBase } from 'src/app/Base/ComponentBase';
+const isMobile = require('../../Services/Libs/isMobile.min.js');
 
 @Component({
   selector: 'app-icon-button',
@@ -22,6 +23,10 @@ export class IconButtonComponent extends ComponentBase implements OnInit {
 
   onClick() {
     this.emitAction(this.action, {})
+  }
+  
+  public get mobile(): any {
+    return isMobile;
   }
 
 }

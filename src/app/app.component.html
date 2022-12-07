@@ -1,5 +1,16 @@
-<div class="cont">
-    <app-top-panel class="topPanel" [data]="data" (onAction)="handleAction($event)"></app-top-panel>
-    <app-boards class="board" [data]="data" (onAction)="handleAction($event)"></app-boards>
-    <app-bottom-panel [data]="data" (onAction)="handleAction($event)"></app-bottom-panel>
+<div class="cont" [ngClass]="[mobile.any ? 'mobile' : '']" *ngIf="!portraitMode">
+    <div class="leftContainer">
+        <app-dice-roll [gameData]="data.game" [dices]="data.game.rolledDices" class="gameCont"></app-dice-roll>
+        <app-top-panel class="topPanel" [data]="data" (onAction)="handleAction($event)"></app-top-panel>
+        <app-boards id="board" [data]="data" (onAction)="handleAction($event)"></app-boards>
+        <app-bottom-panel class="bottomCont" [data]="data" (onAction)="handleAction($event)"></app-bottom-panel>
+    </div>
+    <div class="rightContainer">
+        <app-history-panel id="history" [gameHistory]="gameHistory" (onAction)="handleAction($event)">
+        </app-history-panel>
+    </div>
+</div>
+
+<div class="cont_mobile" *ngIf="portraitMode">
+    <div class="icon"></div>
 </div>

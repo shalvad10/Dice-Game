@@ -23,8 +23,4 @@ export class BoardsComponent extends ComponentBase implements OnInit {
     return this.data.game.boards;
   }
 
-  public get gameHistory() {
-    return this.data.game.history;
-  }
-
 }

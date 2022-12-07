@@ -1,0 +1,36 @@
+{
+    "dice": {
+        "white":  {
+            "dice1"                    :"./assets/backgammon/img/dice/white/dice1.json",
+            "dice2"                    :"./assets/backgammon/img/dice/white/dice2.json",
+            "dice3"                    :"./assets/backgammon/img/dice/white/dice3.json",
+            "dice4"                    :"./assets/backgammon/img/dice/white/dice4.json",
+            "dice5"                    :"./assets/backgammon/img/dice/white/dice5.json",
+            "dice6"                    :"./assets/backgammon/img/dice/white/dice6.json"
+        },
+        "red": {
+            "dice1"                    :"./assets/backgammon/img/dice/red/dice1.json",
+            "dice2"                    :"./assets/backgammon/img/dice/red/dice2.json",
+            "dice3"                    :"./assets/backgammon/img/dice/red/dice3.json",
+            "dice4"                    :"./assets/backgammon/img/dice/red/dice4.json",
+            "dice5"                    :"./assets/backgammon/img/dice/red/dice5.json",
+            "dice6"                    :"./assets/backgammon/img/dice/red/dice6.json"
+        },
+        "green": {
+            "dice1"                    :"./assets/backgammon/img/dice/green/dice1.json",
+            "dice2"                    :"./assets/backgammon/img/dice/green/dice2.json",
+            "dice3"                    :"./assets/backgammon/img/dice/green/dice3.json",
+            "dice4"                    :"./assets/backgammon/img/dice/green/dice4.json",
+            "dice5"                    :"./assets/backgammon/img/dice/green/dice5.json",
+            "dice6"                    :"./assets/backgammon/img/dice/green/dice6.json"
+        },
+        "brown": {
+            "dice1"                    :"./assets/backgammon/img/dice/brown/dice1.json",
+            "dice2"                    :"./assets/backgammon/img/dice/brown/dice2.json",
+            "dice3"                    :"./assets/backgammon/img/dice/brown/dice3.json",
+            "dice4"                    :"./assets/backgammon/img/dice/brown/dice4.json",
+            "dice5"                    :"./assets/backgammon/img/dice/brown/dice5.json",
+            "dice6"                    :"./assets/backgammon/img/dice/brown/dice6.json"
+        }
+    }
+}

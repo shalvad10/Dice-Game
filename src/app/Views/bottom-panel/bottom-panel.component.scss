@@ -5,17 +5,26 @@
     justify-content: space-evenly;
     align-items: center;
 
+    &.mobile {
+        .roll-button {
+            .btn {
+                width: 100px;
+                height: 40px;
+                border: 1px solid #FFF;
+                span {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+
     .bet-actions {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         gap: 5px;
     }
-    .chips-cont {
-        
-    }
-    .roll-button {
-        
+    .roll-button {        
         .btn {
             cursor: pointer;
             width: 140px;

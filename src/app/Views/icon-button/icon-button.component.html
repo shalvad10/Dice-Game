@@ -1,4 +1,4 @@
-<div class="cont" (click)="onClick()">
+<div class="cont" [ngClass]="[mobile.any ? 'mobile' : '']" (click)="onClick()">
     <div *ngIf="type == 'text'" class="label" [ngClass]="{'bigText': value.length > 3}"> {{ value }} </div>
     <div *ngIf="type == 'icon'" class="icon" [ngClass]="[icon]"></div>
 </div>

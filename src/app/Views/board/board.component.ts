@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ChangeDetectorRef } from '@angular/core';
 import { ComponentBase } from 'src/app/Base/ComponentBase';
+const isMobile = require('../../Services/Libs/isMobile.min.js');
 
 @Component({
   selector: 'app-board',
@@ -18,6 +19,10 @@ export class BoardComponent extends ComponentBase implements OnInit {
 
   onClick() {
     this.emitAction('placeBet', {boardId: this.cellData.id})
+  }
+
+  public get mobile(): any {
+    return isMobile;
   }
 
 }

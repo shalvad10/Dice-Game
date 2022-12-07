@@ -2,7 +2,6 @@ import { AppData   } from './Data/AppData';
 import { URLReader } from './Libs/URLReader';
 import { AppConnection } from './Connection/AppConnection';
 import Actions from './Actions/Actions';
-import { Helpers } from './Libs/Helpers';
 declare const require: any;
 const isMobile = require('./Libs/isMobile.min.js');
 
@@ -30,6 +29,12 @@ export class AppMain {
       this.actions = new Actions(this.data.dataObject, this.conn.senderObject);
       this.resize();
     }, 1000);
+    window.ondeviceorientation = (screen: any) => {
+      console.warn(screen);
+    };
+      screen.orientation.onchange = (screen: any) => {
+        alert(screen.orientation);
+      };
   }
 
   public checkLoaded(): void {
@@ -42,6 +47,19 @@ export class AppMain {
 
   private resize()
   {
+    // if (this.mobile.any) {
+      
+    //   var targetelement: any = document.getElementsByTagName('body')[0];
+    
+      // if (document.fullscreenElement) {
+      //   document.exitFullscreen();
+      // } else {
+      //   if ( document.documentElement.requestFullscreen) {
+      //     document.documentElement.requestFullscreen();
+      //   }
+      // }
+    // }
+    
     // setTimeout(()=>
     // {
       // var w = window.innerWidth;
@@ -54,10 +72,9 @@ export class AppMain {
       //                                                  this.mobile.tablet == true || this.data.dataObject.availableSize.x <= 1000 ? (window.innerHeight>window.innerWidth+100) ? 'portrait_tablet' : 'landscape_tablet' : '',
       //                                       mobile    :this.mobile.any    == true || this.data.dataObject.availableSize.x <= 1000 ? true : false,
       //                                       device    :this.mobile.any    == true};
-      //                                       this.data.dataObject.isMobile      = this.mobile.any == true || this.data.dataObject.availableSize.x <= 900 ? true : false;
+                                                // this.data.dataObject.isMobile      = this.mobile;
       //                                       this.data.dataObject.isDevice      = this.mobile.any == true;
       window.scrollTo(0,0);
-      // console.warn(this.data.dataObject.availableSize);
     // },1);
   }
 

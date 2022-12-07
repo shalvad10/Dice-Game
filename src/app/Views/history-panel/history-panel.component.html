@@ -1,0 +1,9 @@
+<div class="history" [ngClass]="[mobile.any ? 'mobile' : '']">
+    <div class="title"> HISTORY </div>
+    <div class="dices">
+        <div class="diceCont" *ngFor="let historyItem of gameHistory">
+            <div class="dice" [ngClass]="'red_'+historyItem[0]"></div>
+            <div class="dice" [ngClass]="'white_'+historyItem[1]"></div>
+        </div>
+    </div>
+</div>

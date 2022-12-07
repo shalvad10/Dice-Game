@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
 import { ComponentBase } from 'src/app/Base/ComponentBase';
+const isMobile = require('../../Services/Libs/isMobile.min.js');
 
 @Component({
   selector: 'app-bottom-panel',
@@ -33,4 +34,8 @@ export class BottomPanelComponent extends ComponentBase implements OnInit {
     this.emitAction('rollDice', {});
   }
 
+  public get mobile(): any {
+    return isMobile;
+  }
+  
 }

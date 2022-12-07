@@ -9,6 +9,38 @@
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
+    &.mobile {
+        width: 65vw;
+        height: 35px;
+        border: 1px solid #FFF;
+        .left {
+            border-right: 1px solid #FFF;
+            border-top: 1px solid #FFF;
+            border-bottom: 1px solid #FFF;
+            .nominale {
+                .selected {
+                    .item {
+                        span {
+                            &.nominaleText {
+                                font-size: 17px;
+                            }
+                            &.currencyText {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            .item {
+                font-size: 16px;
+                .value {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
     .left {
         width: 100px;
         height: 100%;

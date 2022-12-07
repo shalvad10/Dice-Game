@@ -1,5 +1,6 @@
 import { Component, OnInit, ChangeDetectorRef , Input} from '@angular/core';
 import { ComponentBase } from 'src/app/Base/ComponentBase';
+const isMobile = require('../../Services/Libs/isMobile.min.js');
 
 @Component({
   selector: 'app-top-panel',
@@ -36,6 +37,10 @@ export class TopPanelComponent extends ComponentBase implements OnInit {
   public selectNominale(nominale: number) {
     this.emitAction('selectNominale', { nominale: nominale});
     this.toggleNominales();
+  }
+  
+  public get mobile(): any {
+    return isMobile;
   }
 
 }
